@@ -3,10 +3,12 @@
     src: url(fonts/Roboto/Roboto-Black.ttf);
 }
 
+* {
+    font-family: 'Roboto';
+}
 .container {
     display: flex;
     margin: auto;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -27,7 +29,6 @@ a.nav {
 }
 
 h1 {
-    /* border: 5px solid red; */
     font-family: 'Roboto';
     font-size: 48px;
     font-weight: 800;
@@ -44,10 +45,10 @@ h3 {
     color: #1f2937;
     display: block;
     text-align: center;
+    position: relative; top: 30px;
 }
 
 header {
-    /* border: 5px solid red; */
     display: flex;
     flex-direction: row;
     background-color: #1f2937;
@@ -59,25 +60,21 @@ header {
 }
 
 nav{
-    /* border: 5px solid red; */
     color: #e5e7eb;
     font-size: 18px;
     width: 40%;
     margin: auto;
     display: flex;
     margin-top: 0px;
-    /* align-content: space-between; */
     position: relative; top: -30px;
 }
 .mainSub {
-    /* border: 5px solid red; */
     color: #e5e7eb;
     font-size: 18px;
     position: relative; top: -30px;
 }
 
 img.head {
-    /* border: 5px solid red; */
     height: 200px;
     width: 525px;
     background-color: cadetblue;
@@ -86,11 +83,9 @@ img.head {
 }
 
 p.head {
-    /* border: 5px solid red; */
     font-size: 24px;
     color:  #f9faf8;
     width: 30%;
-    /* margin: 0px, 0px, 0px, 0px; */
     margin-bottom: auto;
     margin-top: 0px;
     margin-left: 100px;
@@ -99,7 +94,6 @@ p.head {
 }
 
 .headItem {
-    /* border: 5px solid black; */
     margin-left: 100px;
 }
 
@@ -126,21 +120,9 @@ button.head {
     height: 30px;
     position: relative; top: -40px;
 }
-/* border-radius: 8px;
-    border: solid #e5e7eb ;
-    background-color: #3882f6;
-    width: 120px;
-    height: 30px;
-    align-self: flex-end;
-    margin: 0px 100px 40px 0px;
-    padding: 0px 0px 0px 0px;
-    position: relative; left: -30px; top: -30px;
-    color: #e5e7eb; */
 
 div.main {
-    /* border: 5px solid red; */
     display: flex;
-    /* background-color: aquamarine; */
     flex-direction: row;
     flex: 2;
     align-items: center;
@@ -212,7 +194,6 @@ div.main {
  p.callTop {
     color: #f9faf8;
     font-size: 28px;
-    /* border: solid red; */
     width: fit-content;
     margin: 10px 0px 0px 60px;
     padding-top: 30px;
@@ -222,7 +203,6 @@ div.main {
 
  p.callBottom {
     color: #e5e7eb;
-    /* border: solid red; */
     width: fit-content;
     height: fit-content;
     margin: 0px 0px 0px 60px;
@@ -236,5 +216,4 @@ div.main {
     height: 100px;
     margin: 0px 40px 0px 40px;
     padding: 40px 0px 0px 0px;
-    /* position: relative; top: 20px; */
  }
