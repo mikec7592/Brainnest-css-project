@@ -14,6 +14,50 @@
     width: 100%;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #1f2937;
+    flex-wrap: wrap;
+    height: 700px;
+    flex: 2;
+    margin: 0px 40px 0px 40px;
+    padding: 40px 0px 100px 0px;
+}
+
+p.head {
+    font-size: 24px;
+    color:  #f9faf8;
+    width: 30%;
+    margin-bottom: auto;
+    margin-top: 0px;
+    margin-left: 100px;
+    align-content: center;
+    position: relative; top: -30px;
+}
+
+nav{
+    color: #e5e7eb;
+    font-size: 18px;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    margin-top: 0px;
+    position: relative; top: -30px;
+}
+
+ul.nav {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    align-content: space-between;
+}
+
+li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
 a {
     text-decoration: none;
     font-size: 14px;
@@ -28,11 +72,33 @@ a.nav {
     font-size: 18px;
 }
 
+div.headItem {
+    margin-left: 100px;
+}
+
 h1 {
     font-family: 'Roboto';
     font-size: 48px;
     font-weight: 800;
     color:  #f9faf8;
+}
+
+p.mainSub {
+    color: #e5e7eb;
+    font-size: 18px;
+    position: relative; top: -30px;
+}
+
+button.head {
+    display: inline;
+    color: #e5e7eb;
+    background-color: #3882f6;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    position: relative; top: -40px;
 }
 
 h2 {
@@ -48,77 +114,12 @@ h3 {
     position: relative; top: 30px;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: #1f2937;
-    flex-wrap: wrap;
-    height: 700px;
-    flex: 2;
-    margin: 0px 40px 0px 40px;
-    padding: 40px 0px 100px 0px;
-}
-
-nav{
-    color: #e5e7eb;
-    font-size: 18px;
-    width: 40%;
-    margin: auto;
-    display: flex;
-    margin-top: 0px;
-    position: relative; top: -30px;
-}
-.mainSub {
-    color: #e5e7eb;
-    font-size: 18px;
-    position: relative; top: -30px;
-}
-
 img.head {
     height: 200px;
     width: 525px;
     background-color: cadetblue;
     margin-left: 80px;
     position: relative; top: 30px;
-}
-
-p.head {
-    font-size: 24px;
-    color:  #f9faf8;
-    width: 30%;
-    margin-bottom: auto;
-    margin-top: 0px;
-    margin-left: 100px;
-    align-content: center;
-    position: relative; top: -30px;
-}
-
-.headItem {
-    margin-left: 100px;
-}
-
-ul.nav {
-    list-style: none;
-    display: flex;
-    margin: auto;
-    align-content: space-between;
-}
-
-li {
-    display: inline-block;
-    padding-right: 20px;
-}
-
-button.head {
-    display: inline;
-    color: #e5e7eb;
-    background-color: #3882f6;
-    border-radius: 8px;
-    font-size: 18px;
-    text-decoration: none;
-    width: 100px;
-    height: 30px;
-    position: relative; top: -40px;
 }
 
 div.main {
@@ -130,6 +131,14 @@ div.main {
     height: 400px;
     width: auto;
 }
+
+figure {
+    height: 200px;
+    width: 200px;
+    display: inline;
+    margin: 20px;
+ }
+
  img.main {
     border: 5px solid #3882f6;
     border-radius: 25%;
@@ -139,12 +148,6 @@ div.main {
     margin: 20px;
     background-color: grey;
  }
- figure {
-    height: 200px;
-    width: 200px;
-    display: inline;
-    margin: 20px;
- }
 
  div.quote {
     display: flex;
@@ -153,17 +156,6 @@ div.main {
     height: 500px;
     justify-content: center;
     margin: 0px 40px 0px 40px;
-
- }
-
- div.call {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    background-color: #3882f6;
-    padding: 10px;
-    margin: 100px 180px 100px 180px;
-    border-radius: 12px;
  }
 
  blockquote {
@@ -177,18 +169,14 @@ div.main {
     text-align: right;
  }
 
- button.call {
-    border-radius: 8px;
-    border: solid #e5e7eb ;
+ div.call {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     background-color: #3882f6;
-    width: 120px;
-    height: 30px;
-    align-self: flex-end;
-    margin: 0px 100px 40px 0px;
-    padding: 0px 0px 0px 0px;
-    position: relative; left: -30px; top: -30px;
-    color: #e5e7eb;
-    text-decoration: none;
+    padding: 10px;
+    margin: 100px 180px 100px 180px;
+    border-radius: 12px;
  }
 
  p.callTop {
@@ -207,6 +195,20 @@ div.main {
     height: fit-content;
     margin: 0px 0px 0px 60px;
     position: relative; left: 40px;
+ }
+
+ button.call {
+    border-radius: 8px;
+    border: solid #e5e7eb ;
+    background-color: #3882f6;
+    width: 120px;
+    height: 30px;
+    align-self: flex-end;
+    margin: 0px 100px 40px 0px;
+    padding: 0px 0px 0px 0px;
+    position: relative; left: -30px; top: -30px;
+    color: #e5e7eb;
+    text-decoration: none;
  }
 
  footer {
